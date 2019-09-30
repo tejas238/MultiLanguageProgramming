@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">main {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        System.out.println(numparse(<span class="s2">12100</span><span class="s1">))</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">static public </span><span class="s1">String lookup(</span><span class="s0">int </span><span class="s1">number) {</span>
+        String arr[] = <span class="s0">new </span><span class="s1">String[</span><span class="s2">31</span><span class="s1">]</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">0</span><span class="s1">] = </span><span class="s3">&quot;zero&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">1</span><span class="s1">] = </span><span class="s3">&quot;one&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">2</span><span class="s1">] = </span><span class="s3">&quot;two&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">3</span><span class="s1">] = </span><span class="s3">&quot;three&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">4</span><span class="s1">] = </span><span class="s3">&quot;four&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">5</span><span class="s1">] = </span><span class="s3">&quot;five&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">6</span><span class="s1">] = </span><span class="s3">&quot;six&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">7</span><span class="s1">] = </span><span class="s3">&quot;seven&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">8</span><span class="s1">] = </span><span class="s3">&quot;eight&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">9</span><span class="s1">] = </span><span class="s3">&quot;nine&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">10</span><span class="s1">] = </span><span class="s3">&quot;ten&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">11</span><span class="s1">] = </span><span class="s3">&quot;eleven&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">12</span><span class="s1">] = </span><span class="s3">&quot;twelve&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">13</span><span class="s1">] = </span><span class="s3">&quot;thirteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">14</span><span class="s1">] = </span><span class="s3">&quot;fourteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">15</span><span class="s1">] = </span><span class="s3">&quot;fifteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">16</span><span class="s1">] = </span><span class="s3">&quot;sixteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">17</span><span class="s1">] = </span><span class="s3">&quot;seventeen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">18</span><span class="s1">] = </span><span class="s3">&quot;eighteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">19</span><span class="s1">] = </span><span class="s3">&quot;nineteen&quot;</span><span class="s0">;</span>
+        <span class="s1">arr[</span><span class="s2">20</span><span class="s1">] = </span><span class="s3">&quot;twenty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">30</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;thirty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">40</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;forty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">50</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;fifty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">60</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;sixty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">70</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;seventy&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">80</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;eighty&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">90</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;ninety&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">100</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;hundred&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">1000</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;thousand&quot;</span><span class="s0">;</span>
+        if <span class="s1">(number == </span><span class="s2">1000000</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;million&quot;</span><span class="s0">;</span>
+
+        else if<span class="s1">(number &lt; </span><span class="s2">21</span><span class="s1">) </span><span class="s0">return </span><span class="s1">arr[number]</span><span class="s0">;</span>
+        return <span class="s3">&quot;&quot;</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">static public </span><span class="s1">String numparse(</span><span class="s0">int </span><span class="s1">number) {</span>
+        <span class="s0">if </span><span class="s1">(number == </span><span class="s2">0</span><span class="s1">) </span><span class="s0">return </span><span class="s1">lookup(</span><span class="s2">0</span><span class="s1">)</span><span class="s0">;</span>
+        int <span class="s1">modded</span><span class="s0">, </span><span class="s1">count = </span><span class="s2">1</span><span class="s0">;</span>
+        int <span class="s1">rest = number</span><span class="s0">;</span>
+        <span class="s1">String output = </span><span class="s3">&quot;&quot;</span><span class="s0">;</span>
+        do <span class="s1">{</span>
+            modded = rest%<span class="s2">1000</span><span class="s0">;</span>
+            <span class="s1">rest = (rest-modded)/</span><span class="s2">1000</span><span class="s0">;</span>
+            if <span class="s1">(count == </span><span class="s2">1</span><span class="s1">) output = hundreds(modded)</span><span class="s0">;</span>
+            else if <span class="s1">(modded == </span><span class="s2">0</span><span class="s1">) output = hundreds(modded) + </span><span class="s3">&quot; &quot; </span><span class="s1">+ output</span><span class="s0">;</span>
+            else <span class="s1">output = hundreds(modded) + </span><span class="s3">&quot; &quot; </span><span class="s1">+ lookup(count) + </span><span class="s3">&quot; &quot; </span><span class="s1">+ output</span><span class="s0">;</span>
+            <span class="s1">count *= </span><span class="s2">1000</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s0">while</span><span class="s1">(rest != </span><span class="s2">0</span><span class="s1">)</span><span class="s0">;</span>
+        return <span class="s1">output</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+
+    <span class="s0">static public </span><span class="s1">String tens(</span><span class="s0">int </span><span class="s1">number) {</span>
+        <span class="s0">if </span><span class="s1">(number==</span><span class="s2">0</span><span class="s1">) </span><span class="s0">return </span><span class="s3">&quot;&quot;</span><span class="s0">;</span>
+        int <span class="s1">modded = number%</span><span class="s2">10</span><span class="s0">;</span>
+        int <span class="s1">diff = number-modded</span><span class="s0">;</span>
+        <span class="s1">String output</span><span class="s0">;</span>
+        if <span class="s1">((number &gt; </span><span class="s2">10</span><span class="s1">) &amp;&amp; (number &lt; </span><span class="s2">20</span><span class="s1">)) </span><span class="s0">return </span><span class="s1">lookup(number)</span><span class="s0">;</span>
+        else if <span class="s1">(modded == </span><span class="s2">0</span><span class="s1">) output = lookup(diff)</span><span class="s0">;</span>
+        else if <span class="s1">(diff == </span><span class="s2">0</span><span class="s1">) output = lookup(modded)</span><span class="s0">;</span>
+        else <span class="s1">output = lookup(diff) + </span><span class="s3">&quot; &quot; </span><span class="s1">+ lookup(modded)</span><span class="s0">;</span>
+        return <span class="s1">output</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">static public </span><span class="s1">String hundreds(</span><span class="s0">int </span><span class="s1">number) {</span>
+       <span class="s0">int </span><span class="s1">modded = number%</span><span class="s2">100</span><span class="s0">;</span>
+       int <span class="s1">diff = (number-modded)/</span><span class="s2">100</span><span class="s0">;</span>
+       if <span class="s1">(number==</span><span class="s2">0 </span><span class="s1">|| diff==</span><span class="s2">0</span><span class="s1">) </span><span class="s0">return </span><span class="s1">tens(modded)</span><span class="s0">;</span>
+       else return <span class="s1">(lookup(diff) + </span><span class="s3">&quot; hundred &quot; </span><span class="s1">+ tens(modded))</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+}
+</pre>
+</body>
+</html>

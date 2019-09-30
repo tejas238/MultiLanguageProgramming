@@ -1,0 +1,65 @@
+Script started on 2018-11-13 01:10:31-0800
+tejas2@ada:~/CS320/HW5$ prolog[K[K[K[K[K[Kls
+main.pl  maintest.pl  prac.pl  typescript
+tejas2@ada:~/CS320/HW5$ prolog
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [main][4G[10G.
+[31mWarning: /u/tejas2/CS320/HW5/main.pl:84:
+	Singleton variables: [S,SO]
+[0m[31mWarning: /u/tejas2/CS320/HW5/main.pl:91:
+	Singleton variables: [S,SO]
+[0m[1mtrue.[0m
+
+?- main.
+Factorial pretty print:
+
+begin
+    n := 5
+    r := 1
+    while (n>0) do
+        begin
+            r := (r*n)
+            n := (n-1)
+        end
+    output r
+end
+
+
+Factorial execution:
+
+r = 120
+
+
+22nd Fibonacci pretty print:
+
+begin
+    i := 1
+    j := 1
+    k := 20
+    while (k>0) do
+        begin
+            l := (i+j)
+            i := j
+            j := l
+            k := (k-1)
+        end
+    output j
+end
+
+
+22nd Fibonacci execution:
+
+j = 17711
+[1mtrue [0m[1m.[0m
+
+?- a[Khalt.
+tejas2@ada:~/CS320/HW5$ exit
+exit
+
+Script done on 2018-11-13 01:11:07-0800

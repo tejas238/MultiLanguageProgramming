@@ -1,0 +1,82 @@
+Script started on 2018-11-13 01:13:03-0800
+tejas2@ada:~/CS320/HW5$ ls
+main.pl  maintest.pl  prac.pl  typescript
+tejas2@ada:~/CS320/HW5$ prolog
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [maintest][4G[14G.
+[31mWarning: /u/tejas2/CS320/HW5/main.pl:84:
+	Singleton variables: [S,SO]
+[0m[31mWarning: /u/tejas2/CS320/HW5/main.pl:91:
+	Singleton variables: [S,SO]
+[0m[31mWarning: /u/tejas2/CS320/HW5/maintest.pl:16:
+	Singleton variables: [TL]
+[0m[32m% PL-Unit: main [0m[31m
+Warning: /u/tejas2/CS320/HW5/maintest.pl:40:
+	/u/tejas2/CS320/HW5/maintest.pl:33:
+	PL-Unit: Test test5SA: Test succeeded with choicepoint
+[0m[31mWarning: /u/tejas2/CS320/HW5/maintest.pl:40:
+	/u/tejas2/CS320/HW5/maintest.pl:34:
+	PL-Unit: Test test6SF: Test succeeded with choicepoint
+[0m[31mWarning: /u/tejas2/CS320/HW5/maintest.pl:40:
+	/u/tejas2/CS320/HW5/maintest.pl:35:
+	PL-Unit: Test test7EX: Test succeeded with choicepoint
+[0m[32m done
+[0m[32m% All 3 tests passed
+[0m[1mtrue.[0m
+
+?- testpprun.
+Correct to: "plunit_main:testpprun"? yes
+while (b<a) do
+    begin
+        a := 2
+        b := 2
+        begin
+            a := 3
+            b := (b/4)
+        end
+    end
+
+while (a<b) do
+    begin
+        a := 2
+        b := 2
+    end
+
+while (a<b) do
+    if (a>2) then
+        begin
+            a := 2
+            b := 2
+        end
+    else
+        begin
+            a := 3
+            b := 4
+            output b
+        end
+
+while (a<b) do
+    if (a<2) then
+        begin
+            a := (a*5)
+            b := (b+(2*3))
+        end
+    else
+        begin
+            a := 3
+            b := 4
+        end
+
+[1mtrue [0m[1m.[0m
+
+?- a[Khalt.
+tejas2@ada:~/CS320/HW5$ exit
+exit
+
+Script done on 2018-11-13 01:13:31-0800

@@ -1,0 +1,52 @@
+Script started on 2018-11-17 23:04:57-0800
+tejas2@ada:~/CS320/HW6$ ls -a
+.  ..  Main.hs	Maintest.hs  typescript
+tejas2@ada:~/CS320/HW6$ hugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l Main
+Main> factpp
+begin
+    n :- 5
+    r :- 1
+    while (n>0) do
+        begin
+            r :- (r*n)
+            n :- (n-1)
+        end
+    output r
+end
+
+Main> factex
+[(Var "n",Val 0),(Var "r",Val 120)]
+Main> fibpp
+begin
+    i :- 1
+    j :- 1
+    k :- 20
+    while (k>0) do
+        begin
+            l :- (i+j)
+            i :- j
+            j :- l
+            k :- (k-1)
+        end
+    output j
+end
+
+Main> fibex
+[(Var "i",Val 10946),(Var "j",Val 17711),(Var "k",Val 0),(Var "l",Val 17711)]
+Main> :q
+[Leaving Hugs]
+tejas2@ada:~/CS320/HW6$ exit
+exit
+
+Script done on 2018-11-17 23:05:23-0800

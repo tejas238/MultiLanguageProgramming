@@ -1,0 +1,58 @@
+Script started on 2018-11-17 23:07:56-0800
+tejas2@ada:~/CS320/HW6$ ls -a
+.  ..  Main.hs	Maintest.hs  typescript
+tejas2@ada:~/CS320/HW6$ hugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l Maintest
+Maintest> tests
+Cases: 8  Tried: 0  Errors: 0  Failures: 0Cases: 8  Tried: 1  Errors: 0  Failures: 0Cases: 8  Tried: 2  Errors: 0  Failures: 0Cases: 8  Tried: 3  Errors: 0  Failures: 0Cases: 8  Tried: 4  Errors: 0  Failures: 0Cases: 8  Tried: 5  Errors: 0  Failures: 0Cases: 8  Tried: 6  Errors: 0  Failures: 0Cases: 8  Tried: 7  Errors: 0  Failures: 0                                          Cases: 8  Tried: 8  Errors: 0  Failures: 0
+
+Maintest> test1PP
+while (b<a) do
+    begin
+        a :- 2
+        b :- 2
+        begin
+            a :- 3
+            b :- (b/4)
+        end
+    end
+
+Maintest> test2PP
+while (a<b) do
+    begin
+        a :- 2
+        b :- 2
+    end
+
+Maintest> test3PP
+while (a<b) do
+    if (a>2) then
+        begin
+            a :- 2
+            b :- 2
+        end
+    else
+        a :- 5
+
+Maintest> test4PP
+begin
+    a :- ((2/(3+a))*3)
+    output a
+end
+
+Maintest> :q
+[Leaving Hugs]
+tejas2@ada:~/CS320/HW6$ exit
+exit
+
+Script done on 2018-11-17 23:08:39-0800
